@@ -1,0 +1,39 @@
+<html>
+<head>
+</head>
+
+<body>
+<h1>Marketshift ACT Search</h1>
+
+<form method="POST" action="/search_result/">
+{% csrf_token %}
+<table>
+    <tr><td>Company Name:&nbsp;<input name="company_name" /></td></tr>
+    <tr><td>Company DUNS:&nbsp;<input name="company_duns" /></td></tr>
+    <tr><td>City:&nbsp;<input name="city" /></td></tr>
+    <tr><td>The Number of Employees in 2013:&nbsp;
+            min&nbsp;<input name="employee_2013_min" />
+            max&nbsp;<input name="employee_2013_max" /></td></tr>
+    <tr><td>The Number of Employees in 2014:&nbsp;
+            min&nbsp;<input name="employee_2014_min" />
+            max&nbsp;<input name="employee_2014_max" /></td></tr>
+    <tr><td>The Federal Contracting in 2013:&nbsp;
+            min&nbsp;<input name="fedcontract_2013_min" />
+            max&nbsp;<input name="fedcontract_2013_max" /></td></tr>
+    <tr><td>The Federal Contracting in 2014:&nbsp;
+            min&nbsp;<input name="fedcontract_2014_min" />
+            max&nbsp;<input name="fedcontract_2014_max" /></td></tr>
+    <tr><td>The Revenue in 2013:&nbsp;
+            min&nbsp;<input name="revenue_2013_min" />
+            max&nbsp;<input name="revenue_2013_max" /></td></tr>
+    <tr><td>The Revenue in 2014:&nbsp;
+            min&nbsp;<input name="revenue_2014_min" />
+            max&nbsp;<input name="revenue_2014_max" /></td></tr>
+    <tr><td><input type="submit" value="Submit"></td></tr>
+</table>
+</form>
+
+</body>
+
+
+</html>
